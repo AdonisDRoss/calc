@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#pos{
+    width: 100%;
+    height: 100%;
+    display: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/wet.jpg);
+    background-size: cover;
+    background-color: rgb(50, 68, 124);
+    max-width: 50%;
+    z-index: 500;
+
+}
+
+#rain{
+    width: 100%;
+    position: center;
+    z-index: 1;
+    left:480px;
+    top:50px;
+    
+}
+.surface{
+    width: 300px;
+    justify-content: center;
+    
+}
+
+.calculator{
+    width: 380px;
+    display: table-caption ;
+    
+}
+
+.calculator .value{
+    grid-column:span 4;
+    height:100px;
+    text-align: right;
+    border: solid black;
+    outline: none;
+    padding:10px;
+    font-size: 25px;
+    margin-left: 4px;
+    width: 380px;
+    
+}
+
+.calculator span{
+    border: 3px outset black;
+    display: grid;
+    float: left;
+    margin : 5px;
+    margin-right : 0px;
+    margin-bottom: 0px;
+    width: 90px;
+    height:90px;
+    color: black;
+    font-weight: bold;
+    background:lightslategray;
+    place-items: center;
+    justify-content: center;
+    font-size:25px;
+    outline: solid black;
+    
+}
+
+
+.calculator span:hover{
+    color:black;
+    background:slateblue;
+    font-size:65px;
+}
+
+.calculator span:active{
+    border: 3px inset black;
+    background:paleturquoise;
+    color: purple;
+}
+
+
+
+.calculator span.clear{
+    grid-column: 2px;
+    width: 185px;
+    background:pink;
+    grid-column:span 2;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.calculator span.clear:hover{
+    color:red;
+    background: black;
+    font-size:90px;
+}
+
+.calculator span.equal{
+    background:white;
+    grid-column:span 2;
+    width: 185px;
+    justify-content: center;
+    font-size: 80px;
+}
+.calculator span.equal:hover{
+    color:green;
+    background-color: black;
+    font-size: 85px;
+}
+
