@@ -75,14 +75,15 @@
 
 .calculator span:hover{
     color:black;
-    background:slateblue;
+    outline: lime solid 4px;
     font-size:65px;
 }
 
 .calculator span:active{
-    border: 3px inset black;
-    background:paleturquoise;
-    color: purple;
+    border: 0px inset black;
+    background-color: slateblue;
+    color: lime;
+    
 }
 
 

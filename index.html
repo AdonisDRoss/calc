@@ -6,6 +6,17 @@
 <link href="weather.css" rel="stylesheet">
 </head>
 <body  id="pos"  class ="weather rainy">
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : 'your-app-id',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
+      </script>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     <div  id= "rain"   class ="weather rains" >
     <form class ="calculator" name = "calc">
         <input class = "value" type ="text" name = "txt" readonly="">
@@ -26,8 +37,7 @@
         <span class = "num" onclick="document.calc.txt.value += '/'">/</span>
         <span class = "num" onclick="document.calc.txt.value += '00'">00</span>
         <span class = "num" onclick="document.calc.txt.value += '.'">.</span>
-        
-        <span class = "num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+        <span class = "num equal" onclick="document.calc.txt.value += eval(calc.txt.value)">=</span>
         
     </form>
 </div>
